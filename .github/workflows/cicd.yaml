@@ -31,4 +31,4 @@ jobs:
       # Step 5: Train the model
       - name: Train Model
         run: |
-          python mlcode.py
+          python train_model.py
