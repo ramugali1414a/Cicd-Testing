@@ -15,7 +15,7 @@ jobs:
       # Step 2: Download Iris Dataset from UCI
       - name: Download Iris Dataset from UCI
         run: |
-          curl -o iris.csv https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+          curl -o iris.csv https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.csv
 
       # Step 3: Set up Python environment
       - name: Set up Python
