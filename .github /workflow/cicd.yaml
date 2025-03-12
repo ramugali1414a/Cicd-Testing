@@ -12,10 +12,10 @@ jobs:
       # Step 1: Checkout the code
       - uses: actions/checkout@v3
 
-      # Step 2: Download Iris dataset (if not in the repo)
+      # Step 2: Download Iris Dataset from UCI
       - name: Download Iris Dataset from UCI
         run: |
-          curl -o iris.csv https://github.com/ramugali1414a/Cicd-Testing/blob/b84058db2fecb575a8b90d8bb7b7594e3b6b503d/iris.csv
+          curl -o iris.csv https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 
       # Step 3: Set up Python environment
       - name: Set up Python
