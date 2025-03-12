@@ -10,8 +10,11 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, precision_score, f1_score, recall_score
 sns.set(style='white')
 
-# Load Data
-dataset = pd.read_csv(r"C:\Users\galir\PROJECTS\CICD_Pipeline\iris.csv")
+import os
+file_path = r"C:\Users\galir\PROJECTS\CICD_Pipeline\iris.csv"
+print("File exists:", os.path.exists(file_path))
+dataset = pd.read_csv(file_path)
+
 
 # Feature names (Ensure no extra spaces or parentheses)
 dataset.columns = [colname.strip(' (cm)').replace(" ", "_") for colname in dataset.columns.tolist()]
